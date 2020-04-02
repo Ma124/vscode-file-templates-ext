@@ -93,7 +93,9 @@ export function run(templatesManager: TemplatesManager, args: any) {
                         fileContents = fileContents.replace(search, moment().format("D MMM YYYY"));
                         break;
                     default:
-                        if (workspaceSettings && workspaceSettings[variableName]) {
+                        if (variableName.startsWith("time:")) {
+                            fileContents = fileContents.replace(search, moment().format(variableName.substr(5)));
+                        } else if (workspaceSettings && workspaceSettings[variableName]) {
                             fileContents = fileContents.replace(search, workspaceSettings[variableName]);
                         } else {
                             let variableInput = <vscode.InputBoxOptions> {
