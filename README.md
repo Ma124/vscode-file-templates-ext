@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/brpaz/vscode-file-templates-ext.svg?branch=master)](https://travis-ci.org/brpaz/vscode-file-templates-ext)
 
-[Visual Studio code](https://code.visualstudio.com) extenstion that allows to quickly create new files based on defined templates. 
+[Visual Studio code](https://code.visualstudio.com) extension that allows to quickly create new files based on defined templates.
 
 Inspired by [this Atom Extension](https://atom.io/packages/file-templates).
 
@@ -42,11 +42,14 @@ When a file is created from the template, the user is prompted with a value to p
 
 ### Predefined variables
 
-*  ```filename``` the output filename.
+* `filename` the output filename.
+* `filepath` the output filepath.
+* `year`: the current year, e.g. `2020`.
+* `date`: the current date, e.g. `1 Jan 2020`.
 
 ## Templates Location.
 
-By default, this extension expects the file templates to be placed at the following location, depending of youur OS:
+By default, this extension expects the file templates to be placed at the following location, depending of your OS:
 
 Linux:
 
