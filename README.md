@@ -42,10 +42,11 @@ When a file is created from the template, the user is prompted with a value to p
 
 ### Predefined variables
 
-* `filename` the output filename.
-* `filepath` the output filepath.
+* `filename`: the output filename.
+* `filepath`: the output filepath.
 * `year`: the current year, e.g. `2020`.
 * `date`: the current date, e.g. `1 Jan 2020`.
+* `time:<moment.js format>`: a custom time format (for `<moment.js format>` see the [moment.js docs](https://momentjs.com/docs/#/displaying/))
 
 ## Templates Location.
 
